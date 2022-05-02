@@ -27,7 +27,7 @@ int main() {
 	Individual C(binarystr1);
 	Individual D(binarystr2);
 
-	Individual *CD=execute(&C,&A,k1);
+	Individual *CC=execute(&C,&A,k1);
 	Individual *DD=execute(&D,&B,k2);
 	std::cout<<CC->getString()<<" "<<DD->getString()<<" "<<DD->getMaxOnes();
 }
