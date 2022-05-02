@@ -1,7 +1,9 @@
 #include "Individual.h"
-#include "BitFLip.h"
+#include "BitFlip.h"
 #include "BitFlipProb.h"
 #include "Rearrange.h"
+#include <iostream>
+#include <string>
 
 Individual * execute(Individual * indPtr, Mutator * mPtr, int k) {
   mPtr->mutate(indPtr,k);
@@ -25,7 +27,7 @@ int main(void) {
 	Individual C(binarystr1);
 	Individual D(binarystr2);
 
-	Individual *CC=execute(&C,&A,k1);
+	Individual *CD=execute(&C,&A,k1);
 	Individual *DD=execute(&D,&B,k2);
 	std::cout<<CC->getString()<<" "<<DD->getString()<<" "<<DD->getMaxOnes();
 }
