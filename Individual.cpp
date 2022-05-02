@@ -10,7 +10,7 @@ std::string Individual::getString() {
 }
 
 int Individual::getBit(int pos){
-  if(pos<binaryString.length() && pos<0) {
+  if(pos<binaryString.length() && pos>0) {
     return binaryString[pos-1];
   } else {
     return -1;
