@@ -5,12 +5,12 @@
 #include <iostream>
 #include <string>
 
-Individual * execute(Individual * indPtr, Mutator * mPtr, int k) {
+Individual * execute(Individual* indPtr, Mutator* mPtr, int k) {
   mPtr->mutate(indPtr,k);
   return indPtr;
 }
 
-int main(void) {
+int main() {
 
   std::string binarystr1;
   std::cin>> binarystr1;
